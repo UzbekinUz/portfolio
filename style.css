@@ -274,3 +274,179 @@ nav {
         border-radius: 50%;
     }
 }
+
+/* Theme switcher buttons */
+.theme-switcher {
+    display: flex;
+    align-items: center;
+}
+
+.theme-switcher button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Light Mode */
+body.light-mode {
+    background: #FFFFFF;
+    color: #000000;
+}
+
+.light-mode nav {
+    background: #EEEEEE;
+    box-shadow: 2px 3px 4px #DDDDDD;
+}
+
+.light-mode .logo>h1,
+.light-mode .link>a {
+    color: #000000;
+}
+
+.light-mode .link>a:hover {
+    color: #555555;
+}
+
+.light-mode .info>h1 {
+    color: #000000;
+}
+
+.light-mode .info>h2 {
+    color: #333333;
+}
+
+.light-mode .info>.text {
+    color: #555555;
+}
+
+.light-mode .info>.text>p:last-child {
+    color: #000000;
+}
+
+.light-mode .btns>a {
+    background: #EEEEEE;
+    color: #000000;
+}
+
+.light-mode .btns>a:hover {
+    background: #DDDDDD;
+}
+
+.light-mode .circle {
+    border-color: #DDDDDD;
+    box-shadow: 0px 0px 10px #DDDDDD;
+}
+
+.light-mode .line {
+    background: #000000;
+}
+
+.light-mode .shape {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Pink Mode */
+body.pink-mode {
+    background: linear-gradient(-45deg, #FADADD, #F5B8C8, #F0A3B5, #FADADD);
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite;
+}
+
+.pink-mode nav {
+    background: #F5B8C8;
+    box-shadow: 2px 3px 4px #F0A3B5;
+}
+
+.pink-mode .logo>h1,
+.pink-mode .link>a,
+.pink-mode .info>h1,
+.pink-mode .info>.text,
+.pink-mode .info>.text>p:last-child {
+    color: #FFFFFF;
+}
+
+.pink-mode .link>a:hover {
+    color: #FFC0CB;
+}
+
+.pink-mode .info>h2 {
+    color: #FFC0CB;
+}
+
+.pink-mode .btns>a {
+    background: #F5B8C8;
+    color: #FFFFFF;
+}
+
+.pink-mode .btns>a:hover {
+    background: #FFFFFF;
+    color: #F5B8C8;
+}
+
+.pink-mode .circle {
+    border-color: #F5B8C8;
+    box-shadow: 0px 0px 10px #F0A3B5;
+}
+
+.pink-mode .line {
+    background: #FFFFFF;
+}
+
+.pink-mode .shape {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* High Contrast Mode */
+body.high-contrast {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.high-contrast nav {
+    background: #000000;
+    border: 1px solid #FFFFFF;
+    box-shadow: none;
+}
+
+.high-contrast .logo>h1,
+.high-contrast .link>a,
+.high-contrast .info>h1,
+.high-contrast .info>.text,
+.high-contrast .info>.text>p:last-child {
+    color: #FFFFFF;
+}
+
+.high-contrast .link>a:hover {
+    color: #FFFF00;
+}
+
+.high-contrast .info>h2 {
+    color: #CCCCCC;
+}
+
+.high-contrast .btns>a {
+    background: #000000;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+.high-contrast .btns>a:hover {
+    background: #FFFFFF;
+    color: #000000;
+}
+
+.high-contrast .circle {
+    border-color: #FFFFFF;
+    box-shadow: none;
+}
+
+.high-contrast .line {
+    background: #FFFFFF;
+}
+
+.high-contrast .shape {
+    display: none;
+}
